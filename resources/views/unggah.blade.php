@@ -31,24 +31,15 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Beranda </h3>
+              <h3 class="page-title"> Unggah Data Amatan </h3>
             </div>
             <div class="row">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
-                  <div class="card-body">
-                    <form class="forms-sample" >
-                      <div class="form-group">
-                        <label for="exampleInput1">Tipe Visualisasi</label>
-                        <select type="text" class="form-control" id="exampleInput1">
-                          <option value="0">Peta Konsistensi per Wilayah (subsegmen)</option>
-                          <option value="1">Progres per Wilayah</option>
-                          <option value="2">Validasi Bulan Terakhir</option>
-                          <option value="3">Pencapaian Tahun Berjalan</option>
-                        </select>     
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInput2">Tahun</label>
+                <div class="card-body">
+                <div class="form-group">
+                    <form  id="myForm">
+                    <label for="exampleInput2">Tahun</label>
                         <select type="text" class="form-control" id="exampleInput2">
                           <option value="0">2020</option>
                           <option value="1">2021</option>
@@ -74,20 +65,16 @@
                         </select>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInput4">Kabupaten/Kota</label>
-                        <select class="form-control" id="exampleInput4" >
-                        <option value="3399">Pilih Kab/Kot</option><option value="3301">3301 - Cilacap</option><option value="3302">3302 - Banyumas</option><option value="3303">3303 - Purbalingga</option><option value="3304">3304 - Banjarnegara</option><option value="3305">3305 - Kebumen</option><option value="3306">3306 - Purworejo</option><option value="3307">3307 - Wonosobo</option><option value="3308">3308 - Magelang</option><option value="3309">3309 - Boyolali</option><option value="3310">3310 - Klaten</option><option value="3311">3311 - Sukoharjo</option><option value="3312">3312 - Wonogiri</option><option value="3313">3313 - Karanganyar</option><option value="3314">3314 - Sragen</option><option value="3315">3315 - Grobogan</option><option value="3316">3316 - Blora</option><option value="3317">3317 - Rembang</option><option value="3318">3318 - Pati</option><option value="3319">3319 - Kudus</option><option value="3320">3320 - Jepara</option><option value="3321">3321 - Demak</option><option value="3322">3322 - Semarang</option><option value="3323">3323 - Temanggung</option><option value="3324">3324 - Kendal</option><option value="3325">3325 - Batang</option><option value="3326">3326 - Pekalongan</option><option value="3327">3327 - Pemalang</option><option value="3328">3328 - Tegal</option><option value="3329">3329 - Brebes</option><option value="3371">3371 - Kota Magelang</option><option value="3372">3372 - Kota Surakarta</option><option value="3373">3373 - Kota Salatiga</option><option value="3374">3374 - Kota Semarang</option><option value="3375">3375 - Kota Pekalongan</option><option value="3376">3376 - Kota Tegal</option></select>
-                        </select>
+                        <label>File upload</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                          <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload File">
+                          <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-gradient-primary py-3" type="button">Upload</button>
+                          </span>
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="exampleInput5">Segmen</label>
-                        <select class="form-control" id="exampleInput5" >
-                        <option value="Subsegmen">Subsegmen</option>
-                        <option value="Segmen">Segmen</option>
-                        <option value="Evita">Segmen &amp; Status</option>
-                        </select>
-                      </div>
-                      <button type="submit" class="btn btn-gradient-primary me-2">Lihat</button>
+                      <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
                     </form>
                   </div>
                 </div>
