@@ -25,22 +25,20 @@
   <body>
     <div class="container-scroller">
         <!-- resources/views/home.blade.php -->
-        @include('components.navbar-padi')
+        @include('components.navbar-jagung')
 
         <!-- partial -->
         <div class="main-panel">
-          <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title"> Panduan Teknis </h3>
+          <div class="content-wrapper" style="background: linear-gradient(to right, #f4ffc8, #ddf3ca);">
+            <div class="page-header" style="background-color: #3b5740">
+              <h3 class="page-title"> Konsep dan Definisi </h3>
             </div>
             <div class="row">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
-                  <div class="card-body">
-                  <img style="height:50%;width:100%" id="image" src="/assets/img/imgleft.png">
-                  <button type="button" class="btn btn-gradient-primary btn-icon-text">
+                  <img style="height:100%;width:100%" id="image" src="https://webapps.bps.go.id/jateng/mbadiba/assets/img/rule3300_jagung.png">
+                  <button type="button" class="btn btn-gradient-primary btn-icon-text"style="background: linear-gradient(to right, #3b7d46, #659f3b);">
                   <i class="fa fa-download"></i> Unduh </button>
-                  </div>
                 </div>
               </div>
             </div>

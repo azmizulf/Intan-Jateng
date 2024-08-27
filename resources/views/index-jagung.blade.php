@@ -26,12 +26,12 @@
   <body>
     <div class="container-scroller">
         <!-- resources/views/home.blade.php -->
-        @include('components.navbar-padi')
+        @include('components.navbar-jagung')
 
         <!-- partial -->
         <div class="main-panel">
-          <div class="content-wrapper">
-            <div class="page-header">
+          <div class="content-wrapper" style="background: linear-gradient(to right, #f4ffc8, #ddf3ca);">
+            <div class="page-header" style="background-color: #3b5740">
               <h3 class="page-title"> Beranda </h3>
             </div>
             <div class="row">
@@ -88,7 +88,7 @@
                         <option value="Evita">Segmen &amp; Status</option>
                         </select>
                       </div>
-                      <button type="submit" class="btn btn-gradient-primary me-2">Lihat</button>
+                      <button type="submit" class="btn btn-gradient-primary me-2" style="background: linear-gradient(to right, #3b7d46, #659f3b);">Lihat</button>
                     </form>
                   </div>
                 </div>

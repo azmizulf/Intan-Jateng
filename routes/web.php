@@ -10,6 +10,10 @@ Route::get('/index', function () {
     return view('index');
 });
 
+Route::get('/index-jagung', function () {
+    return view('index-jagung');
+});
+
 Route::get('/riwayat', function () {
     return view('riwayat');
 });
@@ -24,4 +28,28 @@ Route::get('/kondef', function () {
 
 Route::get('/panduan', function () {
     return view('panduan');
+});
+
+Route::get('/validasi', function () {
+    return view('validasi');
+});
+
+Route::get('/riwayat-jagung', function () {
+    return view('riwayat-jagung');
+});
+
+Route::get('/unggah-jagung', function () {
+    return view('unggah-jagung');
+});
+
+Route::get('/kondef-jagung', function () {
+    return view('kondef-jagung');
+});
+
+Route::get('/panduan-jagung', function () {
+    return view('panduan-jagung');
+});
+
+Route::get('/validasi-jagung', function () {
+    return view('validasi-jagung');
 });

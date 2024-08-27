@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -25,21 +25,57 @@
   <body>
     <div class="container-scroller">
         <!-- resources/views/home.blade.php -->
-        @include('components.navbar-padi')
+        @include('components.navbar-jagung')
 
         <!-- partial -->
         <div class="main-panel">
-          <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title"> Panduan Teknis </h3>
+        <div class="content-wrapper" style="background: linear-gradient(to right, #f4ffc8, #ddf3ca);">
+            <div class="page-header" style="background-color: #3b5740">
+              <h3 class="page-title"> Unggah Data Amatan </h3>
             </div>
             <div class="row">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
-                  <div class="card-body">
-                  <img style="height:50%;width:100%" id="image" src="/assets/img/imgleft.png">
-                  <button type="button" class="btn btn-gradient-primary btn-icon-text">
-                  <i class="fa fa-download"></i> Unduh </button>
+                <div class="card-body">
+                <div class="form-group">
+                  <form  id="myForm">
+                    <label for="exampleInput2">Tahun</label>
+                        <select type="text" class="form-control" id="exampleInput2">
+                          <option value="0">2020</option>
+                          <option value="1">2021</option>
+                          <option value="2">2022</option>
+                          <option value="3">2023</option>
+                        </select> 
+                </div>
+                      <div class="form-group">
+                        <label for="exampleInpu3">Bulan</label>
+                        <select class="form-control" id="exampleInput3" >
+                          <option value="01">01 - Januari</option>
+                          <option value="02">02 - Februari</option>
+                          <option value="03">03 - Maret</option>
+                          <option value="04">04 - April</option>
+                          <option value="05">05 - Mei</option>
+                          <option value="06">06 - Juni</option>
+                          <option value="07">07 - Juli</option>
+                          <option value="08">08 - Agustus</option>
+                          <option value="09">09 - September</option>
+                          <option value="10">10 - Oktober</option>
+                          <option value="11">11 - November</option>
+                          <option value="12">12 - Desember</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>File upload</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                          <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload File">
+                          <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-gradient-primary py-3" style="background: linear-gradient(to right, #3b7d46, #659f3b);" type="button">Upload</button>
+                          </span>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-gradient-unggah me-2"style="background: linear-gradient(to right, #3b7d46, #659f3b);">Submit</button> 
+                    </form>
                   </div>
                 </div>
               </div>
@@ -79,5 +115,7 @@
     <script src="/assets/js/typeahead.js"></script>
     <script src="/assets/js/select2.js"></script>
     <!-- End custom js for this page -->
+</body>
+</html>
   </body>
 </html>

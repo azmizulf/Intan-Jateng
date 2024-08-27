@@ -25,7 +25,7 @@
   <body>
     <div class="container-scroller">
         <!-- resources/views/home.blade.php -->
-        @include('components.navbar')
+        @include('components.navbar-padi')
 
         <!-- partial -->
         <div class="main-panel">

@@ -1,11 +1,11 @@
 <!-- resources/views/components/navbar.blade.php -->
  <!-- Navbar -->
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start" style ="background-image: url(/assets/img/bg-mode2.png);">
           <a class="navbar-brand brand-logo" href="/index"><img src="/assets/img/logo-full.png" alt="logo" /></a>
           <a class="navbar-brand brand-logo-mini" href="/index"><img src="/assets/img/logo.png" alt="logo" /></a>
         </div>
-        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <div class="navbar-menu-wrapper d-flex align-items-stretch" style ="background-image: url(/assets/img/bg-mode2.png);">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-menu"></span>
           </button>
@@ -32,23 +32,11 @@
               <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
                 <i class="mdi mdi-format-line-spacing"></i>
                 <h6 class="p-3 mb-0">Mode</h6>
-
               </a>
               <div class="dropdown-menu dropdown-menu-end navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
                 <h6 class="p-3 mb-0">Mode</h6>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-success">
-                      <i class="fa fa-tree"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                    <h6 class="preview-subject font-weight-normal mb-1">Jagung BPPT</h6>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
+                <a class="dropdown-item preview-item" href="/index">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-warning">
                       <i class="fa fa-leaf"></i>
@@ -59,14 +47,14 @@
                   </div>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
+                <a class="dropdown-item preview-item" style="background:linear-gradient(to right, #dffdc5, #feffd8)" href="/index-jagung">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-info">
-                      <i class="fa fa-list-alt"></i>
+                      <i class="fa fa-tree"></i>
                     </div>
                   </div>
                   <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                    <h6 class="preview-subject font-weight-normal mb-1">Evaluasi</h6>
+                    <h6 class="preview-subject font-weight-normal mb-1">Jagung</h6>
                   </div>
                 </a>
                 <div class="dropdown-divider"></div>
@@ -91,16 +79,16 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar" style ="background-image: url(/assets/img/bg-mode2.png);">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="/index">
+              <a class="nav-link" href="/index-jagung">
                 <span class="menu-title">Dashboard</span>
                 <i class="fa fa-home"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/kondef">
+              <a class="nav-link" href="/kondef-jagung">
                 <span class="menu-title">Kondef</span>
                 <i class="fa fa-sitemap"></i>
               </a>
@@ -114,22 +102,22 @@
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="/unggah">Unggah</a>
+                    <a class="nav-link" href="/unggah-jagung">Unggah</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/riwayat">Riwayat</a>
+                    <a class="nav-link" href="/riwayat-jagung">Riwayat</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <a class="nav-link" href="/validasi-jagung">
                 <span class="menu-title">Validasi</span>
                 <i class="fa fa-list-alt"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/panduan">
+              <a class="nav-link" href="/panduan-jagung">
                 <span class="menu-title">Panduan</span>
                 <i class="fa fa-book"></i>
               </a>

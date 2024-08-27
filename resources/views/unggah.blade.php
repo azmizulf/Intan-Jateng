@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -25,7 +25,7 @@
   <body>
     <div class="container-scroller">
         <!-- resources/views/home.blade.php -->
-        @include('components.navbar')
+        @include('components.navbar-padi')
 
         <!-- partial -->
         <div class="main-panel">
@@ -38,7 +38,7 @@
                 <div class="card">
                 <div class="card-body">
                 <div class="form-group">
-                    <form  id="myForm">
+                  <form  id="myForm">
                     <label for="exampleInput2">Tahun</label>
                         <select type="text" class="form-control" id="exampleInput2">
                           <option value="0">2020</option>
@@ -46,7 +46,7 @@
                           <option value="2">2022</option>
                           <option value="3">2023</option>
                         </select> 
-                      </div>
+                </div>
                       <div class="form-group">
                         <label for="exampleInpu3">Bulan</label>
                         <select class="form-control" id="exampleInput3" >
@@ -74,7 +74,7 @@
                           </span>
                         </div>
                       </div>
-                      <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+                      <button type="submit" class="btn btn-gradient-unggah me-2">Submit</button> 
                     </form>
                   </div>
                 </div>
@@ -115,5 +115,7 @@
     <script src="/assets/js/typeahead.js"></script>
     <script src="/assets/js/select2.js"></script>
     <!-- End custom js for this page -->
+</body>
+</html>
   </body>
 </html>
