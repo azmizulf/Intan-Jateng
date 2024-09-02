@@ -1,11 +1,11 @@
 <!-- resources/views/components/navbar.blade.php -->
  <!-- Navbar -->
-      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" style ="background-image: url(/assets/img/bg-mode2.png);">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start" style ="background-image: url(/assets/img/bg-mode2.png);">
           <a class="navbar-brand brand-logo" href="/index"><img src="/assets/img/logo-full.png" alt="logo" /></a>
           <a class="navbar-brand brand-logo-mini" href="/index"><img src="/assets/img/logo.png" alt="logo" /></a>
         </div>
-        <div class="navbar-menu-wrapper d-flex align-items-stretch" style ="background-image: url(/assets/img/bg-mode2.png);">
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-menu"></span>
           </button>
@@ -43,7 +43,7 @@
                     </div>
                   </div>
                   <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                    <h6 class="preview-subject font-weight-normal mb-1">Padi Pro</h6>
+                    <h6 class="preview-subject font-weight-normal mb-1">Padi</h6>
                   </div>
                 </a>
                 <div class="dropdown-divider"></div>
@@ -58,7 +58,7 @@
                   </div>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
+                <a class="dropdown-item preview-item" href="/index-ubin">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-ubinan">
                       <i class="fa fa-cubes"></i>
@@ -78,7 +78,6 @@
 
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
-        <!-- partial:../../partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar" style ="background-image: url(/assets/img/bg-mode2.png);">
           <ul class="nav">
             <li class="nav-item">

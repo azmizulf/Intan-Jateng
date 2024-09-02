@@ -44,7 +44,7 @@
                     </div>
                   </div>
                   <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                    <h6 class="preview-subject font-weight-normal mb-1">Padi Pro</h6>
+                    <h6 class="preview-subject font-weight-normal mb-1">Padi</h6>
                   </div>
                 </a>
                 <div class="dropdown-divider"></div>
@@ -59,7 +59,7 @@
                   </div>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item">
+                <a class="dropdown-item preview-item"href="/index-ubin">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-ubinan">
                       <i class="fa fa-cubes"></i>

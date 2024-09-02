@@ -14,6 +14,10 @@ Route::get('/index-jagung', function () {
     return view('index-jagung');
 });
 
+Route::get('/index-ubin', function () {
+    return view('index-ubin');
+});
+
 Route::get('/riwayat', function () {
     return view('riwayat');
 });
@@ -52,4 +56,16 @@ Route::get('/panduan-jagung', function () {
 
 Route::get('/validasi-jagung', function () {
     return view('validasi-jagung');
+});
+
+Route::get('/potensi-ubin', function () {
+    return view('potensi-ubin');
+});
+
+Route::get('/unggah-ubin', function () {
+    return view('unggah-ubin');
+});
+
+Route::get('/riwayat-ubin', function () {
+    return view('riwayat-ubin');
 });

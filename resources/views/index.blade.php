@@ -38,27 +38,32 @@
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <form class="forms-sample" >
-                      <div class="form-group">
-                        <label for="exampleInput1">Tipe Visualisasi</label>
+                  <form class="forms-sample">
+                      <div class="form-group row" style="margin-bottom: 0;">
+                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Tipe Visualisasi</label>
+                        <div class="col-sm-9">
                         <select type="text" class="form-control" id="exampleInput1">
                           <option value="0">Peta Konsistensi per Wilayah (subsegmen)</option>
                           <option value="1">Progres per Wilayah</option>
                           <option value="2">Validasi Bulan Terakhir</option>
                           <option value="3">Pencapaian Tahun Berjalan</option>
-                        </select>     
+                        </select>   
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="exampleInput2">Tahun</label>
+                      <div class="form-group row" style="margin-bottom: 0;">
+                        <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Tahun</label>
+                        <div class="col-sm-9">
                         <select type="text" class="form-control" id="exampleInput2">
                           <option value="0">2020</option>
                           <option value="1">2021</option>
                           <option value="2">2022</option>
                           <option value="3">2023</option>
                         </select> 
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="exampleInpu3">Bulan</label>
+                      <div class="form-group row" style="margin-bottom: 0;">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Bulan</label>
+                        <div class="col-sm-9">
                         <select class="form-control" id="exampleInput3" >
                           <option value="01">01 - Januari</option>
                           <option value="02">02 - Februari</option>
@@ -73,23 +78,30 @@
                           <option value="11">11 - November</option>
                           <option value="12">12 - Desember</option>
                         </select>
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="exampleInput4">Kabupaten/Kota</label>
+                      <div class="form-group row" style="margin-bottom: 0;">
+                        <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Kabupaten/Kota</label>
+                        <div class="col-sm-9">
                         <select class="form-control" id="exampleInput4" >
                         <option value="3399">Pilih Kab/Kot</option><option value="3301">3301 - Cilacap</option><option value="3302">3302 - Banyumas</option><option value="3303">3303 - Purbalingga</option><option value="3304">3304 - Banjarnegara</option><option value="3305">3305 - Kebumen</option><option value="3306">3306 - Purworejo</option><option value="3307">3307 - Wonosobo</option><option value="3308">3308 - Magelang</option><option value="3309">3309 - Boyolali</option><option value="3310">3310 - Klaten</option><option value="3311">3311 - Sukoharjo</option><option value="3312">3312 - Wonogiri</option><option value="3313">3313 - Karanganyar</option><option value="3314">3314 - Sragen</option><option value="3315">3315 - Grobogan</option><option value="3316">3316 - Blora</option><option value="3317">3317 - Rembang</option><option value="3318">3318 - Pati</option><option value="3319">3319 - Kudus</option><option value="3320">3320 - Jepara</option><option value="3321">3321 - Demak</option><option value="3322">3322 - Semarang</option><option value="3323">3323 - Temanggung</option><option value="3324">3324 - Kendal</option><option value="3325">3325 - Batang</option><option value="3326">3326 - Pekalongan</option><option value="3327">3327 - Pemalang</option><option value="3328">3328 - Tegal</option><option value="3329">3329 - Brebes</option><option value="3371">3371 - Kota Magelang</option><option value="3372">3372 - Kota Surakarta</option><option value="3373">3373 - Kota Salatiga</option><option value="3374">3374 - Kota Semarang</option><option value="3375">3375 - Kota Pekalongan</option><option value="3376">3376 - Kota Tegal</option></select>
                         </select>
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="exampleInput5">Segmen</label>
+                      <div class="form-group row" style="margin-bottom: 0;">
+                        <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Segmen</label>
+                        <div class="col-sm-9">
                         <select class="form-control" id="exampleInput5" >
                         <option value="Subsegmen">Subsegmen</option>
                         <option value="Segmen">Segmen</option>
                         <option value="Evita">Segmen &amp; Status</option>
                         </select>
+                        </div>
                       </div>
-                      <button type="submit" class="btn btn-gradient-primary me-2">Lihat</button>
+                      <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.5rem;background: #98cf68;">
+                        <i class="fa fa-refresh"></i> Lihat </button></td>
                     </form>
+                    <div id="chartContainer"></div>
                   </div>
                 </div>
               </div>
@@ -97,12 +109,7 @@
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023 <a href="https://www.bootstrapdash.com/" target="_blank">BootstrapDash</a>. All rights reserved.</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
-            </div>
-          </footer>
+          @include('components.footer')
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
@@ -129,5 +136,9 @@
     <script src="/assets/js/typeahead.js"></script>
     <script src="/assets/js/select2.js"></script>
     <!-- End custom js for this page -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+
   </body>
 </html>
