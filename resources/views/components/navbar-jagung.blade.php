@@ -65,7 +65,7 @@
                     </div>
                   </div>
                   <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                    <h6 class="preview-subject font-weight-normal mb-1">Ubinan Padi</h6>
+                    <h6 class="preview-subject font-weight-normal mb-1">Ubinan</h6>
                   </div>
                 </a>
             </li>

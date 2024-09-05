@@ -54,6 +54,10 @@ Route::get('/panduan-jagung', function () {
     return view('panduan-jagung');
 });
 
+Route::get('/panduan-ubin', function () {
+    return view('panduan-ubin');
+});
+
 Route::get('/validasi-jagung', function () {
     return view('validasi-jagung');
 });
@@ -68,4 +72,8 @@ Route::get('/unggah-ubin', function () {
 
 Route::get('/riwayat-ubin', function () {
     return view('riwayat-ubin');
+});
+
+Route::get('/datapetani', function () {
+    return view('datapetani');
 });

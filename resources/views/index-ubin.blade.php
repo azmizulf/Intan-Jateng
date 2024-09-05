@@ -145,6 +145,7 @@
                           <th> Bulan </th>
                           <th> Jenis Sample</th>
                           <th> Keterangan</th>
+                          <th> Petani</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -157,6 +158,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#abe96c">AVAILABLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>3301261826</td>
@@ -167,6 +173,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#ffc37c">UNAVAILABLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>3301261826</td>
@@ -177,6 +188,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#ff5050">NON-ELIGIBLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>3301261826</td>
@@ -187,6 +203,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#abe96c">AVAILABLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>3301261826</td>
@@ -197,6 +218,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#ffc37c">UNAVAILABLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>3301261826</td>
@@ -207,6 +233,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#ff5050">NON-ELIGIBLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>3301261826</td>
@@ -217,6 +248,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#abe96c">AVAILABLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>3301261826</td>
@@ -227,6 +263,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#ffc37c">UNAVAILABLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>3301261826</td>
@@ -237,6 +278,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#ff5050">NON-ELIGIBLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>3301261826</td>
@@ -247,6 +293,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#abe96c">AVAILABLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>3301261826</td>
@@ -257,7 +308,11 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#ffc37c">UNAVAILABLE</td>
-                        </tr>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         <tr>
                           <td>3301261826</td>
                           <td>C1</td>
@@ -267,11 +322,58 @@
                           <td>Juli</td>
                           <td>C</td>
                           <td style="background-color:#ff5050">NON-ELIGIBLE</td>
+                          <td>
+                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;" data-toggle="modal" data-target="#editModal">
+                              <i class="fa fa-edit"></i> Edit
+                            </button>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
                     <button type="button" class="btn btn-gradient-primary btn-icon-text"style="background: linear-gradient(to right, #696b4c, #b9af49);margin-bottom: 1rem;">
                     <i class="fa fa-download"></i> Unduh </button>
+                    <!-- Modal for Edit Form -->
+                    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="editModalLabel">Data Petani</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <form id="editForm">
+                              <div class="form-group">
+                                <label for="segmen">Kode Segmen</label>
+                                <input type="text" class="form-control" id="segmen" value="3301261826" readonly>
+                              </div>
+                              <div class="form-group">
+                                <label for="subsegmen">Subsegmen</label>
+                                <input type="text" class="form-control" id="subsegmen" value="C1">
+                              </div>
+                              <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama">
+                              </div>
+                              <div class="form-group">
+                                <label for="nik">NIK</label>
+                                <input type="text" class="form-control" id="nik" placeholder="Masukkan NIK">
+                              </div>
+                              <div class="form-group">
+                                <label for="alamat">Alamat</label>
+                                <textarea class="form-control" id="alamat" rows="2" placeholder="Masukkan alamat"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="noHp">No. HP</label>
+                                <input type="text" class="form-control" id="noHp" placeholder="Masukkan No. HP">
+                              </div>
+                              <button type="submit" class="btn btn-gradient-primary btn-icon-text" style="background: linear-gradient(to right, #696b4c, #b9af49);margin-bottom: 1rem;">Submit</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -309,6 +411,9 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- DataTables JS -->
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script>

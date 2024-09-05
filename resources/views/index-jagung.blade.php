@@ -39,36 +39,62 @@
               <div class="col-12 grid-margin stretch-card">
               <div class="card">
                   <div class="card-body">
-                    <h4 class="judul-chart"> Peta Konsistensi Perwilayah (Subsegmen)</h4>
-                    <div class="dropdown-chart">
-                      <div class="dropdownpadi">
-                      <label>Tahun</label>
-                          <select style="background-color: #a4d17c; border: transparent;color: #FFFFFF;font-weight: bold;">
-                          <option>2024</option>
-                          <option>2023</option>
-                          <option>2022</option>
-                          <option>2021</option>
+                  <div class="dropdownpadi" style="color: #3b5740;background-color: #def4ca;">
+                      <label>Peta</label>
+                          <select id="petaSelect" style="background-color: #def4ca; border: transparent;color: #3b5740;font-weight: bold;">
+                          <option value="sebaran">Sebaran Fase Amatan</option>
+                          <option value="konsistensi">Konsistensi Perwilayah (subsegmen)</option>
                           </select>
                       </div>
-                      <div class="dropdownpadi">
-                      <label>Bulan</label>
-                          <select style="background-color: #a4d17c; border: transparent;color: #FFFFFF;font-weight: bold;">
-                          <option>01-Januari</option>
-                          <option>02-Februari</option>
-                          <option>03-Maret</option>
-                          <option>04-April</option>
-                          <option>05-Mei</option>
-                          <option>06-Juni</option>
-                          <option>07-Juli</option>
-                          <option>08-Agustus</option>
-                          <option>09-September</option>
-                          <option>10-Oktober</option>
-                          <option>11-November</option>
-                          <option>12-Desember</option>
-                          </select>
-                      </div>
-                      <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.6rem;background: #a4d17c;margin: 0.5rem;">
-                        <i class="fa fa-refresh"></i> Lihat </button>
+                      <div class="dropdown-chart">
+                         <div class="dropdownpadi">
+                            <label>Tahun</label>
+                            <select style="background-color: #a4d17c; border: transparent;color: #FFFFFF;font-weight: bold;">
+                                <option>2024</option>
+                                <option>2023</option>
+                                <option>2022</option>
+                                <option>2021</option>
+                            </select>
+                        </div>
+
+                        <div class="dropdownpadi">
+                            <label>Bulan</label>
+                            <select style="background-color: #a4d17c; border: transparent;color: #FFFFFF;font-weight: bold;">
+                                <option>01-Januari</option>
+                                <option>02-Februari</option>
+                                <option>03-Maret</option>
+                                <option>04-April</option>
+                                <option>05-Mei</option>
+                                <option>06-Juni</option>
+                                <option>07-Juli</option>
+                                <option>08-Agustus</option>
+                                <option>09-September</option>
+                                <option>10-Oktober</option>
+                                <option>11-November</option>
+                                <option>12-Desember</option>
+                            </select>
+                        </div>
+
+                        <div class="dropdownpadi" id="faseAmatan">
+                            <label>Fase Amatan</label>
+                            <select style="background-color: #a4d17c; border: transparent;color: #FFFFFF;font-weight: bold;">
+                                <option>01-Vegetatif Awal</option>
+                                <option>02-Vegetatif Akhir</option>
+                                <option>03-Reproduktif Awal</option>
+                                <option>04-Reproduktif Akhir</option>
+                                <option>05-Panen Hijauan</option>
+                                <option>06-Panen Muda</option>
+                                <option>07-Panen Pipilan</option>
+                                <option>08-Pengolahan Lahan</option>
+                                <option>09-Lahan Pertanian Bukan Jagung</option>
+                                <option>10-Bukan Lahan Pertanian</option>
+                                <option>11-Puso</option>
+                              </select>
+                        </div>
+
+                        <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.6rem;background: #a4d17c;margin: 0.5rem;">
+                            <i class="fa fa-refresh"></i> Lihat
+                        </button>
                     </div>
                     <div id="map" style="height: 70vh;background: #fbf8f8;"></div>
                 </div>
@@ -111,14 +137,47 @@
                     <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.6rem;background: #a4d17c;margin: 0.5rem;">
                     <i class="fa fa-refresh"></i> Lihat </button>
                     </div>
-                    <div>
                     <div class="row">
                       <div class="chartBox">
-                        <canvas id="Chart" style="display: initial; box-sizing: border-box; height: 1000px; width: 800px;font-weight: bold;"></canvas>
+                        <canvas id="Chart" style="display: initial; box-sizing: border-box; height: 1000px; width: 800px;"></canvas>
                       </div>
                     </div>
+                  </div>
+                  <div class="row">
+                  <div class="card-body">
+                  <h4 class="judul-chart"> Capaian Validasi </h4>
+                  <div class="dropdown-chart">
+                    <div class="dropdownpadi">
+                          <select style="background-color: #a4d17c; border: transparent;color: #FFFFFF;font-weight: bold;">
+                          <option>Subsegmen</option>
+                          <option>Segmen</option>
+                          <option>Segmen dan Status</option>
+                          </select>
+                    </div>
+                    <div class="dropdownpadi">
+                    <select style="background-color: #a4d17c; border: transparent;color: #FFFFFF;font-weight: bold;">
+                          <option value="3399">Pilih Wilayah</option><option value="3300">Jawa Tengah</option><option value="3301">3301 - Cilacap</option><option value="3302">3302 - Banyumas</option><option value="3303">3303 - Purbalingga</option><option value="3304">3304 - Banjarnegara</option><option value="3305">3305 - Kebumen</option><option value="3306">3306 - Purworejo</option><option value="3307">3307 - Wonosobo</option><option value="3308">3308 - Magelang</option><option value="3309">3309 - Boyolali</option><option value="3310">3310 - Klaten</option><option value="3311">3311 - Sukoharjo</option><option value="3312">3312 - Wonogiri</option><option value="3313">3313 - Karanganyar</option><option value="3314">3314 - Sragen</option><option value="3315">3315 - Grobogan</option><option value="3316">3316 - Blora</option><option value="3317">3317 - Rembang</option><option value="3318">3318 - Pati</option><option value="3319">3319 - Kudus</option><option value="3320">3320 - Jepara</option><option value="3321">3321 - Demak</option><option value="3322">3322 - Semarang</option><option value="3323">3323 - Temanggung</option><option value="3324">3324 - Kendal</option><option value="3325">3325 - Batang</option><option value="3326">3326 - Pekalongan</option><option value="3327">3327 - Pemalang</option><option value="3328">3328 - Tegal</option><option value="3329">3329 - Brebes</option><option value="3371">3371 - Kota Magelang</option><option value="3372">3372 - Kota Surakarta</option><option value="3373">3373 - Kota Salatiga</option><option value="3374">3374 - Kota Semarang</option><option value="3375">3375 - Kota Pekalongan</option><option value="3376">3376 - Kota Tegal</option></select>
+                          </select>
+                    </div>
+                    <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.6rem;background: #a4d17c;margin: 0.5rem;">
+                    <i class="fa fa-refresh"></i> Lihat </button>
+                    </div>
+                  <div class="col-lg-6 grid-margin stretch-card">
+                    <div class="card">
+                      <h4 class="card-title">Bulan Terakhir</h4>
+                      <div class="doughnutjs-wrapper d-flex justify-content-center">
+                    <canvas id="pieChart" style="height: 200px; display: block; box-sizing: border-box; width: 200px;" ></canvas>
                     </div>
                   </div>
+                    <div class="card">
+                      <h4 class="card-title">Tahun Berjalan</h4>
+                      <div class="doughnutjs-wrapper d-flex justify-content-center">
+                      <canvas id="pieChart2" style="height: 200px; display: block; box-sizing: border-box; width: 200px;"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -157,6 +216,23 @@
     <!-- End custom js for this page -->
   </body>
 </html>
+
+<script>
+    const petaSelect = document.getElementById('petaSelect');
+    const faseAmatan = document.getElementById('faseAmatan');
+
+    // Event listener untuk menampilkan/menghilangkan fase amatan
+    petaSelect.addEventListener('change', function() {
+        if (petaSelect.value === 'sebaran') {
+            faseAmatan.style.display = 'block'; // Tampilkan jika Sebaran Amatan dipilih
+        } else {
+            faseAmatan.style.display = 'none';  // Sembunyikan jika Konsistensi dipilih
+        }
+    });
+
+    // Set default (Sebaran Amatan, jadi dropdown Fase Amatan ditampilkan)
+    faseAmatan.style.display = 'block';
+</script>
 
 <!-- Make sure you put this AFTER Leaflet's CSS -->
 <script type="text/javascript" src="assets/js/data/jateng.js"></script>
@@ -246,7 +322,7 @@
                 zoomToFeature(e);
                 L.popup()
                     .setLatLng(e.latlng)
-                    .setContent('<b>' + feature.properties.KABKOT + '</b><br />' + feature.properties.KONSISTEN_P + ' titik')
+                    .setContent('<b>' + feature.properties.KABKOT + '</b><br />' + feature.properties.KONSISTEN_P + ' subsegmen inkonsisten')
                     .openOn(map);
             }
         });
@@ -282,7 +358,6 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<canvas id="Chart"></canvas>
 <script>
   const ctx = document.getElementById('Chart').getContext('2d');
 
@@ -459,4 +534,90 @@
       }
     }
   });
+</script>
+
+<script>
+    const cty = document.getElementById('pieChart').getContext('2d');
+
+    const datapolar = {
+        labels: ['Konsisten', 'Warning', 'Inkonsisten'],
+        datasets: [{
+            label: 'Data Konsistensi',
+            data: [65, 28, 18],
+            backgroundColor: [
+                '#92C98C',
+                'rgba(255, 205, 86, 0.6)',
+                '#ED7D79'
+            ],
+            borderColor: [
+                '#92C98C',
+                'rgba(255, 205, 86, 0.6)',
+                '#ED7D79'
+            ],
+            borderWidth: 1
+        }]
+    };
+
+    const options = {
+        plugins: {
+            legend: {
+                position: 'bottom', // Mengatur posisi legend di bawah chart
+                labels: {
+                    font: {
+                        weight: 'bold'
+                    },
+                    color: '#000'
+                }
+            }
+        }
+    };
+
+    const pieChart = new Chart(cty, {
+        type: 'pie',
+        data: datapolar,
+        options: options
+    });
+</script>
+
+<script>
+    const ctz = document.getElementById('pieChart2').getContext('2d');
+
+    const datapolar2 = {
+        labels: ['Konsisten', 'Warning', 'Inkonsisten'],
+        datasets: [{
+            label: 'Data Konsistensi',
+            data: [1345, 20, 58],
+            backgroundColor: [
+                '#92C98C',
+                'rgba(255, 205, 86, 0.6)',
+                '#ED7D79'
+            ],
+            borderColor: [
+                '#92C98C',
+                'rgba(255, 205, 86, 0.6)',
+                '#ED7D79'
+            ],
+            borderWidth: 1
+        }]
+    };
+
+    const options2 = {
+        plugins: {
+            legend: {
+                position: 'bottom', // Pindahkan legend ke bawah chart
+                labels: {
+                    font: {
+                        weight: 'bold'
+                    },
+                    color: '#000'
+                }
+            }
+        }
+    };
+
+    const pieChart2 = new Chart(ctz, {
+        type: 'pie',
+        data: datapolar2,
+        options: options2
+    });
 </script>

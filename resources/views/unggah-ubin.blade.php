@@ -80,8 +80,9 @@
                             <button class="file-upload-browse btn btn-gradient-primary py-3" style="background: linear-gradient(to right,#696b4c, #b9af49);" type="button">Upload</button>
                           </span>
                         </div>
-                        <p style="margin-bottom: 0;font-size: 0.8rem;color: #b9b7b7;">Format penamaan file harus : tahunbulanA_kodekabupaten_jagung.xlsx</p>
-                        <p style="margin-bottom: 0;font-size: 0.8rem;color: #b9b7b7;">Contoh : 202110A_3301_jagung.xlsx</p>
+                        <p style="margin-bottom: 0;font-size: 0.8rem;color: #b9b7b7;">Format penamaan file harus : tahunbulanU/C_kodekabupaten_jagung.xlsx</p>
+                        <p style="margin-bottom: 0;font-size: 0.8rem;color: #b9b7b7;">Contoh : 202110U_3301_jagung.xlsx (sample utama)</p>
+                        <p style="margin-bottom: 0;font-size: 0.8rem;color: #b9b7b7;">Contoh : 202110C_3301_jagung.xlsx (sample cadangan)</p>
                       </div>
                       <button type="submit" class="btn btn-gradient-unggah me-2"style="background: linear-gradient(to right, #696b4c, #b9af49);">Submit</button> 
                     </form>

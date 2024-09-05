@@ -65,7 +65,7 @@
                     </div>
                   </div>
                   <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                    <h6 class="preview-subject font-weight-normal mb-1">Ubinan Padi</h6>
+                    <h6 class="preview-subject font-weight-normal mb-1">Ubinan</h6>
                   </div>
                 </a>
             </li>
@@ -81,19 +81,7 @@
         <!-- partial:../../partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar" style ="background-image: url(/assets/img/bg-mode3.png);">
           <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/index-ubin">
-                <span class="menu-title">Lacak</span>
-                <i class="fa fa-home"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/potensi-ubin">
-                <span class="menu-title">Amatan Potential</span>
-                <i class="fa fa-sitemap"></i>
-              </a>
-            </li>
-            <li class="nav-item">
+          <li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Sample Ubinan</span>
                 <i class="menu-arrow"></i>
@@ -109,6 +97,24 @@
                   </li>
                 </ul>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index-ubin">
+                <span class="menu-title">Lacak</span>
+                <i class="fa fa-home"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/potensi-ubin">
+                <span class="menu-title">Amatan Potential</span>
+                <i class="fa fa-sitemap"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/datapetani">
+                <span class="menu-title">Kelola Data Petani</span>
+                <i class="fa fa-vcard-o"></i>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/panduan-ubin">

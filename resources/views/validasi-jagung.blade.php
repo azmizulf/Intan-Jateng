@@ -108,7 +108,7 @@
                           <td style="background-color:#abe96c"> K</td>
                           <td> Belum Ada Feedback  </td>
                           <td><button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.2rem;background: #87c351;">
-                          <i class="fa fa-edit"></i> Edit </button></td></td>
+                          <i class="fa fa-edit"></i> Edit </button></td>
                           <td><label class="badge badge-warning">APPROVE</label></td>
                         </tr>
                         <tr>
