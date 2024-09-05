@@ -368,7 +368,13 @@
                                 <label for="noHp">No. HP</label>
                                 <input type="text" class="form-control" id="noHp" placeholder="Masukkan No. HP">
                               </div>
-                              <button type="submit" class="btn btn-gradient-primary btn-icon-text" style="background: linear-gradient(to right, #696b4c, #b9af49);margin-bottom: 1rem;">Submit</button>
+                              <div class="d-flex justify-content-between">
+                                <button type="submit" class="btn btn-gradient-primary btn-icon-text" style="background: linear-gradient(to right, #696b4c, #b9af49);margin-bottom: 1rem;" id="submitButton">Submit</button>
+                                <div class="btn-group-right">
+                                <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.5rem;background: #87c351;"data-toggle="modal" data-target="#editModal"><i class="fa fa-edit"></i> Edit </button>
+                                  <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.5rem;background: #ff5050;"><i class="fa fa-trash-o"></i> Hapus </button>
+                                </div>
+                              </div>
                             </form>
                           </div>
                         </div>
@@ -427,3 +433,38 @@
     </script>
   </body>
 </html>
+
+<script>
+  // Add event listener for form submission
+  document.getElementById('editForm').addEventListener('submit', function(e) {
+    e.preventDefault();  // Prevent form from submitting
+
+    // Show the Edit and Delete buttons after submitting the form
+    document.getElementById('editButton').style.display = 'inline-block';
+    document.getElementById('deleteButton').style.display = 'inline-block';
+
+    // Disable the submit button after submit
+    document.getElementById('submitButton').disabled = true;
+  });
+
+  // Optional: Add functionality for Edit and Delete buttons
+  document.getElementById('editButton').addEventListener('click', function() {
+    // Enable editing
+    document.getElementById('submitButton').disabled = false;
+    document.getElementById('submitButton').textContent = 'Update';  // Change the button text to "Update"
+  });
+
+  document.getElementById('deleteButton').addEventListener('click', function() {
+    // Add delete functionality (e.g., clear fields or remove data)
+    if(confirm('Apakah Anda yakin ingin menghapus data ini?')) {
+      // Example: Clear all form fields
+      document.getElementById('editForm').reset();
+      document.getElementById('submitButton').disabled = false;
+      document.getElementById('submitButton').textContent = 'Submit';
+      
+      // Hide the Edit and Delete buttons again
+      document.getElementById('editButton').style.display = 'none';
+      document.getElementById('deleteButton').style.display = 'none';
+    }
+  });
+</script>

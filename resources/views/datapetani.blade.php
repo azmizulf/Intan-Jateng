@@ -125,9 +125,9 @@
                           <td>082926318277</td>
                           <td>PudakPayung Banyumanik Semarang</td>
                           <td>
-                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.5rem;background: #87c351;"data-toggle="modal" data-target="#editModal">
+                          <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.5rem;background: #87c351;"data-toggle="modal" data-target="#editModal">
                             <i class="fa fa-edit"></i> Edit </button>
-                            <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.5rem;background: #ff5050;">
+                          <button type="button" class="btn btn-gradient-primary btn-icon-text" style="padding:0.5rem;background: #ff5050;">
                             <i class="fa fa-trash-o"></i> Hapus </button>
                           </td>
                         </tr>
