@@ -31,15 +31,14 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Panduan Teknis </h3>
+            <h3 class="page-title"> Panduan Teknis </h3>
             </div>
             <div class="row">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                  <img style="height:50%;width:100%" id="image" src="/assets/img/imgleft.png">
-                  <button type="button" class="btn btn-gradient-primary btn-icon-text">
-                  <i class="fa fa-download"></i> Unduh </button>
+                      <!-- Scrollable PDF preview container -->
+                        <iframe src="/assets/panduan.pdf" width="100%" height="500px"></iframe>
                   </div>
                 </div>
               </div>
